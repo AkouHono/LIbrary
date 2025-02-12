@@ -132,7 +132,7 @@ class GenralController {
       } else {
         book = await BookModel.findById(_id)
           .populate("category")
-          .populate("almirah")
+          .populate("bookshelf")
           .populate({
             path: "reviews.user",
             select: "name",

@@ -97,8 +97,7 @@ const ClearanceForm = () => {
               <td>Made By</td>
               <td>Type</td>
               <td>Librarian Approvel</td>
-              <td>Clerk Approvel</td>
-              <td>HOD Approvel</td>
+              
 
               <td>Actions</td>
             </tr>
@@ -123,32 +122,7 @@ const ClearanceForm = () => {
                       {i.librarianApprovalStatus}
                     </span>
                   </td>
-                  <td>
-                    <span
-                      className={`badge ${
-                        i?.clerkApprovalStatus === "Pending"
-                          ? "badge__warning"
-                          : i?.clerkApprovalStatus === "Approved"
-                          ? "badge__success"
-                          : "badge__danger"
-                      } `}
-                    >
-                      {i.clerkApprovalStatus}
-                    </span>
-                  </td>
-                  <td>
-                    <span
-                      className={`badge ${
-                        i?.hodApprovalStatus === "Pending"
-                          ? "badge__warning"
-                          : i?.hodApprovalStatus === "Approved"
-                          ? "badge__success"
-                          : "badge__danger"
-                      } `}
-                    >
-                      {i.hodApprovalStatus}
-                    </span>
-                  </td>
+                  
 
                   <td>
                     <div style={{ width: "200px" }}>

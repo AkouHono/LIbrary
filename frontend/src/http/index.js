@@ -76,9 +76,7 @@ export const updateTeacher = async (_id, data) =>
 export const exportTeachers = async () => api.get(`/teachers/files/export`);
 // ######################## MANAGE STUDENT REQUESTS #################################
 export const getAllStudents = async (qEmail, qName, qRollNumber, page) =>
-  await api.get(
-    `/students?qEmail=${qEmail}&qName=${qName}&qRollNumber=${qRollNumber}&page=${page}`
-  );
+  await api.get(`/students?qEmail=${qEmail}&qName=${qName}&qRollNumber=${qRollNumber}&page=${page}`);
 export const addNewStudent = async (data) => api.post("/students", data);
 export const deleteStudent = async (_id) => api.delete(`/students/${_id}`);
 export const updateStudent = async (_id, data) =>
@@ -135,7 +133,8 @@ export const updateBook = (_id, data) =>
 export const exportBooks = () => api.get("/books/files/export");
 export const getAllBooks = (query, page, limit) =>
   api.get(
-    `/books?qISBN=${query?.ISBN}&qTitle=${query?.title}&qStatus=${query?.status}&page=${page}&limit=${limit}&qCategory=${query.category}`
+     `/books?qISBN=${query?.ISBN}&qTitle=${query?.title}&qStatus=${query?.status}&page=${page}&limit=${limit}&qCategory=${query.category}`
+    //`/books?qISBN=${query?.ISBN}&qTitle=${query?.title}&qStatus=${query?.status}&page=${page}&limit=${limit}&qCategory=67ac4887d370bc9a9ce443a4`
   );
 export const deleteBook = (_id) => api.delete(`/books/${_id}`);
 export const getBook = (_id) => api.get(`/books/${_id}`);

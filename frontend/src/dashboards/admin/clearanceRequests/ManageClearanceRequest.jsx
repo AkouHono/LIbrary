@@ -91,25 +91,7 @@ const ManageClearanceRequest = () => {
         <h2>Manage Clearance Requests</h2>
       </div>
 
-      {/* <div className="filter">
-        <input
-          type="text"
-          placeholder="Search category...."
-          className="background__accent text"
-          value={query}
-          onChange={(e) => {
-            setQuery(e.target.value);
-          }}
-        />
-        <button
-          className="btn btn__primary"
-          onClick={() => {
-            setQuery("");
-          }}
-        >
-          CLEAR
-        </button>
-      </div> */}
+      
 
       <div className="table__wrapper">
         <table className="background__accent" cellSpacing="0" cellPadding="0">

@@ -113,7 +113,7 @@ const menu = [
       },
       {
         id: 3,
-        text: "Almirahs",
+        text: "Book Shelf",
         link: "manage-almirahs",
         icon: <FaList />,
       },

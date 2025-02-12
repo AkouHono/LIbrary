@@ -22,7 +22,7 @@ class DepartementController {
       if (isExist) {
         return next(
           ErrorHandlerService.alreadyExist(
-            "Departement of that name is already exist !"
+            "Department of that name is already exist !"
           )
         );
       }
@@ -77,7 +77,7 @@ class DepartementController {
         "-__v -password"
       );
       if (!document) {
-        return next(ErrorHandlerService.notFound("Departement not found"));
+        return next(ErrorHandlerService.notFound("Department not found"));
       }
       return res.status(200).json({ departement: document });
     } catch (error) {
@@ -127,7 +127,7 @@ class DepartementController {
     try {
       const departement = await DepartementModel.findByIdAndDelete(_id);
       if (!departement) {
-        return next(ErrorHandlerService.notFound("Departement Not Found"));
+        return next(ErrorHandlerService.notFound("Department Not Found"));
       }
       res.status(204).json({ departement });
     } catch (error) {
@@ -139,7 +139,7 @@ class DepartementController {
     try {
       const data = await DepartementModel.find().populate("hod");
       if (data.length === 0) {
-        return next(ErrorHandlerService.notFound("Departements not found"));
+        return next(ErrorHandlerService.notFound("Departments not found"));
       }
 
       const csvStream = csv.format({ headers: true });
@@ -158,7 +158,7 @@ class DepartementController {
         data.map((i, index) => {
           csvStream.write({
             SNo: index + 1,
-            "Departement Name": i.name || "-",
+            "Department Name": i.name || "-",
             "HOD NAME": i.hod.name || "-",
             "HOD EMAIL": i.hod.email || "-",
           });

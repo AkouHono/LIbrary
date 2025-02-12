@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="box1">
           <div className="logo text__primary">
             <GiBookAura className="icon" />
-            <h4>GGC Library</h4>
+            <h4> Library</h4>
           </div>
           <p style={{ marginTop: "8px", lineHeight: "1.5rem" }}>
             Gateway to knowledge, discovery, and lifelong learning for all GGC
@@ -54,21 +54,21 @@ const Footer = () => {
           <h4>CONTACT</h4>
           <div className="item">
             <AiOutlineHome className="icon__home" />
-            <span>Govt.Graduate College Taneyala, Jhelum</span>
+            <span>Department of computer science</span>
           </div>
           <div className="item">
             <AiOutlineMail className="icon" />
-            <span>ggclib@gmail.com</span>
+            <span>library@gmail.com</span>
           </div>
           <div className="item">
             <AiOutlinePhone className="icon" />
-            <span>03445047347234</span>
+            <span>123456789</span>
           </div>
         </div>
       </div>
       <div className="bottom">
         <span>
-          &copy;2023 Copyright : GGC Library Management System, Jhelum
+          &copy;2025 Copyright : Library Management System
         </span>
       </div>
     </footer>

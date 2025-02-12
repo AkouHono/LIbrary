@@ -129,14 +129,10 @@ const ManageStudent = () => {
 
   const fetchData = async () => {
     try {
-      const { data } = await getAllStudents(
-        query.email,
-        query.name,
-        query.rollNumber,
-        currentPage
-      );
-      setData(data);
-    } catch (error) {
+      const { data } = await getAllStudents(query.email,query.name,query.rollNumber,currentPage);
+        setData(data);
+       }
+       catch (error) {
       console.log(error);
     }
   };

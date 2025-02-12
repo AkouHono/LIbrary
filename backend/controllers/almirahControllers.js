@@ -97,7 +97,7 @@ class AlmirahController {
         }
         const columns = [
           { header: "Subject", key: "subject" },
-          { header: "Almirah Number", key: "number" },
+          { header: "bookshelf Number", key: "number" },
           { header: "Total Books", key: "bookCount" },
         ];
         const fileName = "almirahs.csv";

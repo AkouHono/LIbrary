@@ -47,7 +47,7 @@ app.use("/documents", express.static("./documents"));
 
 /* MONGOOSE SETUP */
 mongoose
-  .connect(MONGO_DB_URI)
+  .connect("mongodb://127.0.0.1:27017/myapp")
   .then(() => {
     console.log("MONGO DB CONNECTED SUCCESSFULLY 😍😍");
     /* CREATE SERVER */

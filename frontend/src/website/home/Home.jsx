@@ -58,8 +58,7 @@ const Home = () => {
             <h1>Welcome Message </h1>
           </div>
           <p>
-            Welcome to the Govt. Graduate College, Jhelum Library Management
-            System !
+            
           </p>
           <p>
             Our modern, fully automated college library is undoubtedly a

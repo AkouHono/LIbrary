@@ -33,6 +33,7 @@ const UpdateBook = () => {
     const { name, files } = e.target;
     if (name === "image") {
       setFormData({ ...formData, [name]: files[0] });
+      console.log("file input ----->   "+files[0])
     } else {
       setFormData({ ...formData, [name]: e.target.value });
     }
@@ -140,7 +141,7 @@ const UpdateBook = () => {
             </div>
             {/* Almirah */}
             <div className="form-control">
-              <label htmlFor="almirah">Almirah</label>
+              <label htmlFor="almirah">Book Shelf</label>
               <select
                 name="almirah"
                 id="almirah"
@@ -149,7 +150,7 @@ const UpdateBook = () => {
                 className="bg__accent text__color"
                 required
               >
-                <option value="">Select Almirah</option>
+                <option value="">Select book shelf</option>
                 {almirahs?.map((i) => {
                   return (
                     <option key={i._id} value={i._id}>
